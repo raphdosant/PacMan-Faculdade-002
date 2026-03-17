@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>Pacman Mobile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hud">
+      <div>Pontos: <span id="score">0</span></div>
+      <div>Vidas: <span id="lives">3</span></div>
+      <button id="restart">Reiniciar</button>
+    </header>
+
+    <section class="board-wrap">
+      <canvas id="game" width="420" height="420" aria-label="Jogo Pacman"></canvas>
+      <div id="overlay" class="overlay hidden"></div>
+    </section>
+
+    <section class="touch-controls" aria-label="Controles por toque">
+      <button data-dir="up">▲</button>
+      <div class="row">
+        <button data-dir="left">◀</button>
+        <button data-dir="down">▼</button>
+        <button data-dir="right">▶</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
